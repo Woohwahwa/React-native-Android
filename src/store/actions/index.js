@@ -1,1 +1,3 @@
-export { addPlace, deletePlace, selectPlace, deselectPlace } from './places'
+export function addArticle(payload) {
+  return { type: "ADD_ARTICLE", payload }
+};
