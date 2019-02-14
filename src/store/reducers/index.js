@@ -4,11 +4,11 @@ const initialState = {
   articles: []
 };
 
-function reducer(state = initialState, action) {
-  if (action.type === ADD_ARTICLE) {
-    state.articles.push(action.payload);
+const reducer = (state = initialState, action) => {
+  switch (action.type) {
+    default:
+      return state;
   }
-  return state;
-}
+};
 
 export default reducer;
