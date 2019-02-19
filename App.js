@@ -4,9 +4,12 @@ import {StyleSheet, Text, View, WebView} from 'react-native';
 export default class App extends Component {
   render() {
     return (
+      <Text>ABC</Text>
+      /*
       <WebView
         source={{uri: 'http://360.zipview.kr/#/product/ZV001'}}
       />
+      */
     );
   }
 }

@@ -1,1 +1,1 @@
-export const ADD_ARTICLE = "ADD_ARTICLE";
+export const TRY_AUTH = "TRY_AUTH";
