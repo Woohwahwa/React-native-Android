@@ -1,20 +1,31 @@
-import App from './App';
-import { Navigation } from 'react-native-navigation';
+import React from 'react';
+import { AppRegistry } from 'react-native';
 import { Provider } from 'react-redux';
-// import store from "./src/store";
-// import { addArticle } from "./src/store/actions";
+import App from './App';
+import configureStore from './src/store/configureStore';
+import {Navigation} from 'react-native-navigation';
+import {registerScreens} from './src/screens';
 
-// window.store = store;
-// window.addArticle = addArticle;
+/*
+const store = configureStore();
 
-Navigation.registerComponent(`navigation.playground.App`, () => App);
+const RNRedux = () => (
+  <Provider store={store}>
+    <App />
+  </Provider>
+);
+
+AppRegistry.registerComponent('CindyStudy', () => RNRedux);
+*/
+
+registerScreens();
 
 Navigation.events().registerAppLaunchedListener(() => {
   Navigation.setRoot({
     root: {
       component: {
-        name: 'navigation.playground.App'
+        name: 'Home'
       }
-    }
+    },
   });
 });
