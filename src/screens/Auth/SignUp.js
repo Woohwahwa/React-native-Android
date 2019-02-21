@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import {
   View,
   Button,
+  Text,
   TextInput,
   StyleSheet
 } from 'react-native'
@@ -22,7 +23,6 @@ export default class SignUp extends React.Component {
       console.log('error signing up: ', err)
     }
   };
-
   render() {
     return (
       <View style={styles.container}>
@@ -73,12 +73,10 @@ const styles = StyleSheet.create({
     padding: 8,
     color: 'white',
     borderRadius: 14,
-    fontSize: 18,
-    fontWeight: '500',
   },
   container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center'
   }
-})
+});

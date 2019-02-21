@@ -10,7 +10,7 @@ import {
 import { goToAuth } from './Navigation'
 import { Navigation } from 'react-native-navigation';
 
-import { USER_KEY } from '../config/config'
+import { USER_KEY } from '../config'
 
 export default class Home extends React.Component {
   static get options() {
@@ -33,20 +33,21 @@ export default class Home extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Hello from Home screen.</Text>
+        <Text>Hello from Home screen</Text>
         <Button
           onPress={this.logout}
           title="Sign Out"
         />
         <Button
           onPress={() => {
-            Navigation.push(this.props.componentId, {
+            Navigation.push('App', {
               component: {
-                name: 'List',
+                name: 'List'
               }
             });
+            console.log('props; ', this.props);
           }}
-          title="View next screen"
+          title="List View"
         />
       </View>
     )

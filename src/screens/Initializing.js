@@ -8,7 +8,7 @@ import {
 
 import { goToAuth, goHome } from './Navigation'
 
-import { USER_KEY } from '../config/config'
+import { USER_KEY } from '../config'
 
 export default class Initialising extends React.Component {
   async componentDidMount() {

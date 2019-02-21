@@ -9,7 +9,7 @@ import {
 } from 'react-native'
 
 import { goHome } from '../Navigation'
-import { USER_KEY } from '../../config/config'
+import { USER_KEY } from '../../config'
 
 export default class SignIn extends React.Component {
   state = {
