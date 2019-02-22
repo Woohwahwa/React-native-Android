@@ -10,7 +10,7 @@ import { goToAuth, goHome } from './Navigation'
 
 import { USER_KEY } from '../config'
 
-export default class Initialising extends React.Component {
+export default class Initializing extends React.Component {
   async componentDidMount() {
     try {
       const user = await AsyncStorage.getItem(USER_KEY);

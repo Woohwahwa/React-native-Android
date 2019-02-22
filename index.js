@@ -23,8 +23,14 @@ registerScreens();
 Navigation.events().registerAppLaunchedListener(() => {
   Navigation.setRoot({
     root: {
-      component: {
-        name: 'Home'
+      stack: {
+       children: [
+         {
+           component: {
+             name: 'Home'
+           }
+         }
+       ]
       }
     },
   });
