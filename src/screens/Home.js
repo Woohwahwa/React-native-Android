@@ -6,13 +6,15 @@ import {
   Button,
   StyleSheet,
   AsyncStorage,
-  AppRegistry, TouchableOpacity
+  AppRegistry,
+  TouchableOpacity,
+  WebView
 } from 'react-native'
 
 import { goHome, goToAuth } from './Navigation'
 import { USER_KEY } from '../config'
 import ButtonBasic from '../components/ButtonBasic';
-import request from 'request';
+// import request from 'request';
 
 export default class Home extends React.Component {
   state = {
